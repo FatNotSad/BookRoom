@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CTTapBtn">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_3qq" translatesAutoresizingMaskIntoConstraints="NO" id="2EX-03-plF">
+                    <rect key="frame" x="7.5" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2EX-03-plF" secondAttribute="height" multiplier="1:1" id="0m9-pB-vol"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNI-35-6z9">
+                    <rect key="frame" x="0.0" y="45" width="55" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="uNI-35-6z9" firstAttribute="top" secondItem="2EX-03-plF" secondAttribute="bottom" id="0Tb-1J-MIh"/>
+                <constraint firstItem="2EX-03-plF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="54r-Vb-YyQ"/>
+                <constraint firstAttribute="trailing" secondItem="uNI-35-6z9" secondAttribute="trailing" id="PxK-j4-qHM"/>
+                <constraint firstItem="uNI-35-6z9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g2w-UW-V5K"/>
+                <constraint firstItem="uNI-35-6z9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mB3-SF-xLE"/>
+                <constraint firstItem="2EX-03-plF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="qYZ-Og-90J"/>
+                <constraint firstAttribute="bottom" secondItem="uNI-35-6z9" secondAttribute="bottom" id="rjM-hR-yck"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="2EX-03-plF" id="IEo-Iz-TCj"/>
+                <outlet property="titleLabel" destination="uNI-35-6z9" id="9aW-Ym-WXe"/>
+            </connections>
+            <point key="canvasLocation" x="386.5" y="177"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_3qq" width="40" height="40"/>
+    </resources>
+</document>
