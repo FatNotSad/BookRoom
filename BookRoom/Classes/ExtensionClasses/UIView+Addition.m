@@ -14,6 +14,7 @@
 {
     UIView *view = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
     return view;
+    
 }
 
 - (void)setRounded:(float)rounded
